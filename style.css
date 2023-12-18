@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    font-family: 'Nunito', sans-serif;
+}
+section{
+    background-color: aqua;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    overflow: visible;
+}
+.text-color{
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    color: white;
+    outline: none;
+    width: 170px;
+    cursor: text;
+    background-color: inherit;
+    margin: 0em;
+    padding: 0px;
+    border:none;
+    border-image: none;
+    padding-block: 0px;
+    padding-left: 8px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+}
+.text-color:hover{
+    background-color: rgba(90,90,90,0.1);
+}
+.copy-btn{
+    height: 40px;
+    padding: 10px;
+    right: -30px;
+    position: absolute;
+    border: none;
+    outline: none;
+    background-color:inherit;
+    color: white;
+}
+.copy-btn:hover{
+    background-color: rgba(90,90,90,0.1);
+    cursor: pointer;
+}
+.copy-btn:active{
+    background-color: rgba(90,90,90,0.3);
+}
+.copy-btn i{
+    font-size: 20px;
+}
+.lock-btn{
+    cursor: pointer;
+    color: white;
+    outline: none;
+    margin-bottom: 10vh;
+    padding: 10px;
+    border: none;
+    background-color: inherit;
+}
+button:hover{
+    background-color: rgba(90,90,90,0.1);
+    border-radius: 5px;
+}
+button i{
+    font-size: 30px;
+}
+@media(max-width: 1200px){
+    body{
+        flex-direction: column;
+    }
+    .title{
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+    }
+    .lock-btn{
+        overflow: visible;
+        width: min-content;
+        height: min-content;
+        margin-bottom: 0;
+        padding: 10px;
+        border: none;
+        background-color: inherit;
+    }
+}
